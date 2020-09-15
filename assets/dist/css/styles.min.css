@@ -1,0 +1,40 @@
+:root {
+	--black: #222;
+	--gold: gold;
+	--white: #DECAB0;
+}
+
+#tmpl-component-1 ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+}
+
+#tmpl-component-1 ul li {
+	position: relative;
+    min-width: 320px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+#tmpl-component-1 li button {
+    cursor: pointer;
+	position: absolute;
+    top: 20px;
+    right: 12px;
+    z-index: 1;
+    background-color: var(--black);
+    border: 5px solid var(--white);
+    border-radius: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: gold;
+    padding: 13px;
+    box-shadow: 1px 1px 1px var(--gold);
+}
+

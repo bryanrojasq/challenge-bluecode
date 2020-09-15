@@ -4,7 +4,7 @@ if( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 add_action('wp_enqueue_scripts', function() {
 
-    wp_enqueue_style('add-projects-css', esc_url(trailingslashit(ADD_PROJECTS_PLUGIN_URL) . 'assets/dist/css/styles.min.css'), ['']);
+    wp_enqueue_style('add-projects-css', esc_url(trailingslashit(ADD_PROJECTS_PLUGIN_URL) . 'assets/dist/css/styles.min.css'));
 
     wp_enqueue_script('add-projects-js', esc_url(trailingslashit(ADD_PROJECTS_PLUGIN_URL) . 'assets/dist/js/app.min.js'), ['wp-util'], '1.0', true);
 
